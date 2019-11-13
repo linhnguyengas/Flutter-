@@ -1,0 +1,47 @@
+{
+  "tab_home": "家",
+  "tab_categories": "分類",
+  "tab_profile": "輪廓",
+  "tab_notifications": "通知",
+  "tab_bag": "袋",
+  "title_select_language": "選擇語言",
+  "scan_button": "開始掃描",
+
+  "exit_button_title": "你確定要退出嗎？",
+  "exit_button_ok": "是",
+  "exit_button_cancel": "不!",
+
+  "Intro_title_1":"介紹",
+  "Intro_body_1": "Fman 是信息技術在農業中應用的領導者。我們繼承了科技企業的科技活動成果。Farmtech Vietnam.",
+  "Intro_title_2":"Fman Scan",
+  "Intro_body_2": "通過掃描每個產品的QR碼快速查詢產品信息，提供極其快速，準確和方便的反饋。",
+  "Intro_button_skip": "跳躍",
+  "Intro_button_start": "忽略",
+
+  "Login_title": "登录",
+  "Login_method": "选择用户类型",
+  "Login_user": "用户名/电话号码",
+  "Login_pwd": "密码",
+  "Login_remember": "记住您的帐户",
+  "Login_forget": "忘记密码？",
+  "Login_button": "登录",
+  "Login_text_select": "或登录",
+  "Login_text_register": "没有帐号？",
+  "Login_register": "寄存器",
+
+  "Title_send_mail": "输入您的电子邮件，我们将向您发送指示以找回密码",
+  "Send_mail_button": "发电子邮件",
+  "Comeback":"回来",
+  "Home_page": "主页",
+
+  "Title_register": "寄存器",
+  "Supplier_name": "供应商名称",
+  "User_name": "用户名",
+  "Password": "密码",
+  "Re_password": "再次输入密码",
+  "Email": "电子邮件",
+  "Phone": "电话号码",
+  "Address": "地址",
+  "Register_button": "寄存器"
+
+}

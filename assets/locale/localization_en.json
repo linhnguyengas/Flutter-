@@ -1,0 +1,47 @@
+{
+  "tab_home": "Home",
+  "tab_categories": "Categories",
+  "tab_profile": "Profile",
+  "tab_notifications": "Notifications",
+  "tab_bag": "Bag",
+  "title_select_language": "Select Language",
+  "scan_button": "Start scan",
+
+  "exit_button_title": "Are you sure to exit?",
+  "exit_button_ok": "Yes",
+  "exit_button_cancel": "Nope!",
+
+  "Intro_title_1":"Introduction",
+  "Intro_body_1": "Fman is a leader in the application of information technology in agriculture. We inherit the achievements from scientific and technological activities of Farmtech Vietnam.",
+  "Intro_title_2":"Fman Scan",
+  "Intro_body_2": "Quickly query product information, by scanning the QR code on each product, extremely fast, accurate and convenient feedback.",
+  "Intro_button_skip": "Skip",
+  "Intro_button_start": "Start",
+
+  "Login_title": "Login",
+  "Login_method": "Choose type of user",
+  "Login_user": "Username/ Phone number",
+  "Login_pwd": "Password",
+  "Login_remember": "Remember your account",
+  "Login_forget": "Forget your password?",
+  "Login_button": "Login",
+  "Login_text_select": "Or Login with",
+  "Login_text_register": "Don't have account? ",
+  "Login_register": "Register",
+
+  "Title_send_mail": "Enter your email, we will send you instructions to recover your password",
+  "Send_mail_button": "Send Email",
+  "Comeback":"Come back to",
+  "Home_page": "Home ",
+
+  "Title_register": "Register",
+  "Supplier_name": "Supplier name",
+  "User_name": "Username",
+  "Password": "Password",
+  "Re_password": "Re-enter password",
+  "Email": "Email",
+  "Phone": "Phone number",
+  "Address": "Address",
+  "Register_button": "Register"
+
+}

@@ -1,0 +1,48 @@
+{
+  "tab_home": "Trang chủ",
+  "tab_categories": "Phân loại",
+  "tab_profile": "Hồ sơ",
+  "tab_notifications": "Thông báo",
+  "tab_bag": "Gói",
+  "title_select_language": "Lựa chọn ngôn ngữ",
+  "scan_button": "Bắt đầu quét",
+
+
+  "exit_button_title": "Bạn có chắc chắn muốn thoát",
+  "exit_button_ok": "Đồng ý",
+  "exit_button_cancel": "Hủy bỏ",
+
+
+  "Intro_title_1":"Giới thiệu",
+  "Intro_body_1": "Fman là công ty đi đầu trong lĩnh vực ứng dụng công nghệ thông tin vào nông nghiệp. Chúng tôi kế thừa các thành quả từ hoạt động khoa học công nghệ của doanh nghiệp khoa học công nghệ Farmtech Vietnam.",
+  "Intro_title_2":"Fman Scan",
+  "Intro_body_2": "Truy vấn thông tin sản phẩm nhanh chóng, bằng cách quét mã QR trên từng sản phẩm, phản hồi cực nhanh, chính xác, tiện lợi",
+  "Intro_button_skip": "Bỏ qua",
+  "Intro_button_start": "Bắt đầu",
+
+  "Login_title": "Đăng nhập",
+  "Login_method": "Cách đăng nhập",
+  "Login_user": "Tên tài khoản/Số Điện Thoại",
+  "Login_pwd": "Mật khẩu",
+  "Login_remember": "Ghi nhớ mật khẩu",
+  "Login_forget": "Quên mật khẩu?",
+  "Login_button": "Đăng nhập",
+  "Login_text_select": "Hoặc đăng nhập với",
+  "Login_text_register": "Chưa có tài khoản?",
+  "Login_register": "Đăng ký!",
+
+  "Title_send_mail": "Nhập email của bạn và chúng tôi sẽ gửi bạn hướng dẫn để khôi phục mật khẩu",
+  "Send_mail_button": "Gửi Email",
+  "Comeback": "Quay lại",
+  "Home_page": "Trang chủ",
+
+  "Title_register": "Đăng kí",
+  "Supplier_name": "Tên nhà phân phối",
+  "User_name": "Tên tài khoản",
+  "Password": "Mật khẩu",
+  "Re_password": "Xác nhận mật khẩu",
+  "Email": "Email",
+  "Phone": "Số điện thoại",
+  "Address": "Địa chỉ",
+  "Register_button": "Đăng kí"
+}
