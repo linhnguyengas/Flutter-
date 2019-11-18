@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testqrcode/Component/login.dart';
 import 'package:testqrcode/Service/Application.dart';
 import 'package:testqrcode/Service/ApptTranslations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -57,11 +58,11 @@ class _LanguageSelectorPageStateLogin extends State<LanguageSelectorPageLogin> {
           bool _seen = (prefs.getBool('seen') ?? false);
 
         if (_seen)
-          Navigator.of(context).push(MaterialPageRoute(builder: (context) =>Home()));
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) =>Login()));
         else {
           prefs.setBool('seen', true);
           Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => Intro()));
+              MaterialPageRoute(builder: (context) => Login()));
         }
       },
       child: Center(

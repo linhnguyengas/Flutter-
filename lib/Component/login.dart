@@ -125,7 +125,9 @@ class _LoginState extends State<Login> {
                                       value: check,
                                       onChanged: null,
                                     ),
-                                    Text(AppTranslations.of(context).text('Login_remember'),)
+                                    Text(AppTranslations.of(context).text('Login_remember'),
+                                      style: TextStyle(fontSize: 12.0),
+                                    )
                                   ],
                                 ),
                               ],
@@ -135,7 +137,7 @@ class _LoginState extends State<Login> {
                                 Row(
                                   children: <Widget>[
                                     InkWell(
-                                      child: Text(AppTranslations.of(context).text('Login_forget'),style: TextStyle(color: Colors.lightBlue),),
+                                      child: Text(AppTranslations.of(context).text('Login_forget'),style: TextStyle(color: Colors.lightBlue, fontSize: 12.0),),
                                       onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginForget()));},
                                     ),
                                   ],
@@ -213,7 +215,8 @@ class _LoginState extends State<Login> {
                       ),
                       SizedBox(height: 20.0,),
                       RaisedButton(
-                        child: Text('Chọn ngôn ngữ'),
+                        onPressed: () =>{Navigator.push(context, MaterialPageRoute(builder: (context) => LanguageSelectorPageLogin()))},
+                        child: Text(AppTranslations.of(context).text("title_select_language")),
                       )
                     ],
                   ),
