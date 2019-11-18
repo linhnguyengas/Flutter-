@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:testqrcode/Color/getColorsHex.dart';
 import 'package:testqrcode/Component/LanguageSelectorPage.dart';
+import 'package:testqrcode/Component/home.dart';
 import 'package:testqrcode/Component/loginForget.dart';
 import 'package:testqrcode/Component/register.dart';
 import 'LanguageSelectorPageLogin.dart';
@@ -14,26 +15,7 @@ import 'package:testqrcode/Service/ApptTranslations.dart';
 
 
 // ignore: missing_return
-Future fectchPost(String username , String password) async{
-  var body = jsonEncode({
-    "username" : username,
-    "password": password
-  });
-  final response = await http.post('https://fman.tech/api/distributor/login',body: body);
-  log(username.toString());
-  log(password.toString());
-  int i = response.statusCode;
 
-  if (response.statusCode >= 200 || response.statusCode < 400){
-    log('ok');
-    log(i.toString());
-    // làm thêm chuyển hướng về home và hiển thị thông báo thành công.
-  }else{
-    log('error');
-    log(i.toString());
-    // làm thông báo lỗi.
-  }
-}
 
 class Login extends StatefulWidget {
   Login({Key key}) : super(key: key);
@@ -51,7 +33,7 @@ class _LoginState extends State<Login> {
   String password;
   // ignore: missing_return
   String validatePassword(String value){
-    if (!(value.length > 8) && value.isNotEmpty){
+    if (!(value.length >= 8) && value.isNotEmpty){
       return ('Mật khẩu phải có ít nhất 8 kí tự');
     }else if(value.isEmpty){
       return ('Bạn không được để trống phần này');
@@ -226,6 +208,27 @@ class _LoginState extends State<Login> {
           ),
         );
 
+  }
+  Future fectchPost(String username , String password) async{
+    var body = jsonEncode({
+      "username" : username,
+      "password": password
+    });
+    final response = await http.post('https://fman.tech/api/distributor/login',body: body);
+    log(username.toString());
+    log(password.toString());
+    int i = response.statusCode;
+
+    if (response.statusCode >= 200 || response.statusCode < 400){
+      log('ok');
+      log(i.toString());
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+      // làm thêm chuyển hướng về home và hiển thị thông báo thành công.
+    }else{
+      log('error');
+      log(i.toString());
+      // làm thông báo lỗi.
+    }
   }
 }
 
