@@ -4,7 +4,7 @@ import 'package:testqrcode/Service/Application.dart';
 import 'package:testqrcode/Service/ApptTranslations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:testqrcode/LoadingScreen/intro.dart';
-import 'home.dart';
+import 'SQ.dart';
 
 /*giong y chang con di~ LanguageSeletorPage, qua luoi viet lai goi ngon ngu cho page login nen copy paste!*/
 class LanguageSelectorPageLogin extends StatefulWidget {

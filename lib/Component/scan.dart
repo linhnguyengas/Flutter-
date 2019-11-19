@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:app_settings/app_settings.dart';
 
-import 'package:testqrcode/Component/home.dart';
+import 'package:testqrcode/Component/SQ.dart';
 
 
 

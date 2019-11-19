@@ -3,7 +3,7 @@ import 'package:testqrcode/Service/Application.dart';
 import 'package:testqrcode/Service/ApptTranslations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:testqrcode/LoadingScreen/intro.dart';
-import 'home.dart';
+import 'SQ.dart';
 
 
 class LanguageSelectorPage extends StatefulWidget {

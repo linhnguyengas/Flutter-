@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:testqrcode/Color/getColorsHex.dart';
 import 'package:testqrcode/Component/LanguageSelectorPage.dart';
-import 'package:testqrcode/Component/home.dart';
+import 'package:testqrcode/Component/SQ.dart';
 import 'package:testqrcode/Component/loginForget.dart';
 import 'package:testqrcode/Component/register.dart';
 import 'LanguageSelectorPageLogin.dart';

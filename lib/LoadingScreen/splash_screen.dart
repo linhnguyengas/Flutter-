@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:testqrcode/Component/home.dart';
+import 'package:testqrcode/Component/SQ.dart';
 import 'package:testqrcode/Color/getColorsHex.dart';
 import 'package:testqrcode/LoadingScreen/colorLoader.dart';
 class SplashScreen extends StatefulWidget {
