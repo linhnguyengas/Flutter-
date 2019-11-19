@@ -42,6 +42,21 @@
   "Email": "Email",
   "Phone": "Phone number",
   "Address": "Address",
-  "Register_button": "Register"
+  "Register_button": "Register",
+
+  "Suplier_valid": "Supplier name must have 3 characters at least.",
+  "user_valid": "User name must have 4 characters at least.",
+  "pw_valid": "Password must have 8 characters at least.",
+  "rpw_valid": "Confirm password incorectly!",
+  "email_valid": "Email is not valid!",
+  "phone_valid": "Phone number is not valid!",
+  "Regiter_empty_valid": "Please don't let this field empty.",
+
+  "Register_dialog_success": "Thanks you!",
+  "Register_dialog_success_content": "Your registration is success, please waiting our email to activate your account.",
+  "Register_dialog_fall": "Registration is not success!",
+  "Register_dialog_fall_content": "There are registered information in our system, please check again. ",
+  "Register_dialog_comback_home_button": "Login",
+  "Register_dialog_reType_button": "Check-out"
 
 }

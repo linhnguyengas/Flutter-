@@ -42,6 +42,21 @@
   "Email": "电子邮件",
   "Phone": "电话号码",
   "Address": "地址",
-  "Register_button": "寄存器"
+  "Register_button": "寄存器",
+
+  "Suplier_valid": "供应商名称必须至少包含3个字符.",
+  "user_valid": "用户名至少必须包含4个字符.",
+  "pw_valid": "密码必须至少包含8个字符.",
+  "rpw_valid": "密码输入错误!",
+  "email_valid": "电子邮件无效！",
+  "phone_valid": "电话号码无效！",
+  "Regiter_empty_valid": "请不要将此字段留空。",
+
+  "Register_dialog_success": "谢谢！",
+  "Register_dialog_success_content": "您的注册成功，请等待您的电子邮件以激活您的帐户。",
+  "Register_dialog_fall": "注册不成功！",
+  "Register_dialog_fall_content": "我们的系统中有注册信息，请再次检查.",
+  "Register_dialog_comback_home_button": "登录",
+  "Register_dialog_reType_button": "查看"
 
 }

@@ -62,7 +62,10 @@ class _RegisterState extends State<Register> {
                         padding: const EdgeInsets.only(left:30.0, right: 30.0),
                         child: TextFormField(
                           controller: supplierNameController,
-                          validator: Validation.validateSupplierName,
+                          validator: (String val){
+                            String sName = supplierNameController.text;
+                            return Validation.validateSupplierName(sName, context);
+                          },
                           onSaved: (String val){
                             supplierName = val;
                           },
@@ -75,7 +78,10 @@ class _RegisterState extends State<Register> {
                         padding: const EdgeInsets.only(left:30.0, right: 30.0),
                         child: TextFormField(
                           controller: userNameController,
-                          validator: Validation.validateUserName,
+                          validator: (String val){
+                            String uName = userNameController.text;
+                            return Validation.validateUserName(uName, context);
+                          },
                           onSaved: (String val){
                             username = val;
                           },
@@ -89,7 +95,10 @@ class _RegisterState extends State<Register> {
                         child: TextFormField(
                           controller: pwController,
                           obscureText: true,
-                          validator: Validation.validatePassword,
+                          validator: (String val){
+                            String pw = pwController.text;
+                            return Validation.validatePassword(pw, context);
+                          },
                           onSaved: (String val){
                             password = val;
                           },
@@ -107,7 +116,7 @@ class _RegisterState extends State<Register> {
                           validator: (String val) {
                             String pwd = pwController.text;
                             String repwd = rePwController.text;
-                            return Validation.validateRePassword(repwd, pwd);
+                            return Validation.validateRePassword(repwd, pwd, context);
                           },
                           onSaved: (String val){
                             rePassword = val;
@@ -123,7 +132,10 @@ class _RegisterState extends State<Register> {
                         child: TextFormField(
                           controller: emailController,
                           keyboardType: TextInputType.emailAddress,
-                          validator: Validation.validateEmail,
+                          validator: (String val){
+                            String email = emailController.text;
+                            return Validation.validateEmail(email, context);
+                          },
                           onSaved: (String val){
                             email = val;
                           },
@@ -137,7 +149,10 @@ class _RegisterState extends State<Register> {
                         child: TextFormField(
                           controller: phoneController,
                           keyboardType: TextInputType.number,
-                          validator: Validation.validatePhone,
+                          validator: (String val){
+                            String phone = phoneController.text;
+                            return Validation.validatePhone(phone, context);
+                          },
                           onSaved: (String val){
                             phone = val;
                           },
@@ -150,7 +165,10 @@ class _RegisterState extends State<Register> {
                         padding: const EdgeInsets.only(left:30.0, right: 30.0),
                         child: TextFormField(
                           controller: addressController,
-                          validator: Validation.validateAddress,
+                          validator: (String val){
+                            String andress = addressController.text;
+                            return Validation.validateAddress(andress, context);
+                          },
                           onSaved: (String val){
                             address = val;
                           },
@@ -219,21 +237,30 @@ class _RegisterState extends State<Register> {
     });
 
     final response = await http.post('https://fman.tech/api/distributor/register',body: body);
+    
 
-    if(userNameController.text.isEmpty ||
+    /*if(userNameController.text.isEmpty ||
         supplierNameController.text.isEmpty ||
         pwController.text.isEmpty ||
         rePwController.text.isEmpty ||
         emailController.text.isEmpty ||
         phoneController.text.isEmpty ||
         addressController.text.isEmpty)
-      showDialogRegisterFail("Xin vui lòng kiểm tra lại thông tin đã nhập.");
+      return;*/
+    if(!(Validation.checkValidAndress &&
+        Validation.checkValidSupplierName &&
+        Validation.checkValidUserName &&
+        Validation.checkValidPassword &&
+        Validation.checkValidRePassword &&
+        Validation.checkValidEmai &&
+        Validation.checkValidPhone))
+      return;
     else if (response.statusCode >= 200 && response.statusCode < 400){
       log('ok');
       showDialogRegisterSuccess();
     }else{
       log('error');
-      showDialogRegisterFail("Xin lỗi, đâng ký không thành công, tài khoản đâ tồn tại trên hệ thống!");
+      showDialogRegisterFail();
     }
   }
 
@@ -243,11 +270,11 @@ class _RegisterState extends State<Register> {
         context: context,
         builder: (context){
           return AlertDialog(
-            title: Text("Xin cảm ơn!"),
-            content: Text("Bạn đã đăng ký thành công, xin vui lòng đợi email kích hoạt từ hệ thống!"),
+            title: Text(AppTranslations.of(context).text('Register_dialog_success')),
+            content: Text(AppTranslations.of(context).text('Register_dialog_success_content')),
             actions: <Widget>[
               FlatButton(
-                child: Text("Vể lại trang đăng nhâp"),
+                child: Text(AppTranslations.of(context).text('Register_dialog_comback_home_button')),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
                 },
@@ -258,16 +285,16 @@ class _RegisterState extends State<Register> {
     );
   }
 
-  void showDialogRegisterFail(String message){
+  void showDialogRegisterFail(){
     showDialog(
         context: context,
         builder: (context){
           return AlertDialog(
-            title: Text("Đăng ký không thành công"),
-            content: Text(message),
+            title: Text(AppTranslations.of(context).text('Register_dialog_fall')),
+            content: Text(AppTranslations.of(context).text('Register_dialog_fall_content')),
             actions: <Widget>[
               FlatButton(
-                child: Text("Nhập lại"),
+                child: Text(AppTranslations.of(context).text('Register_dialog_reType_button')),
                 onPressed: (){
                   Navigator.of(context).pop();
                 },

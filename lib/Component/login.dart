@@ -34,9 +34,9 @@ class _LoginState extends State<Login> {
   // ignore: missing_return
   String validatePassword(String value){
     if (!(value.length >= 8) && value.isNotEmpty){
-      return ('Mật khẩu phải có ít nhất 8 kí tự');
+      return AppTranslations.of(context).text('Pw_valid').toString();
     }else if(value.isEmpty){
-      return ('Bạn không được để trống phần này');
+      return AppTranslations.of(context).text('Regiter_empty_valid').toString();
     }
   }
 

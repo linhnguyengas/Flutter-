@@ -44,5 +44,21 @@
   "Email": "Email",
   "Phone": "Số điện thoại",
   "Address": "Địa chỉ",
-  "Register_button": "Đăng kí"
+  "Register_button": "Đăng kí",
+
+  "Suplier_valid": "Tên nhà phân phối phải có ít nhất 3 kí tự",
+  "User_valid": "Tên đăng nhập phải có ít nhất 4 kí tự",
+  "Pw_valid": "Mật khẩu phải có ít nhất 8 kí tự",
+  "Rpw_valid": "Xác nhận mật khẩu không chính xác",
+  "Email_valid": "Email không hợp lệ",
+  "Phone_valid": "Số điện thoại không hợp lệ",
+  "Regiter_empty_valid": "Bạn không được để trống phần này",
+
+  "Register_dialog_success": "Xin cảm ơn!",
+  "Register_dialog_success_content": "Bạn đã đăng ký thành công, xin vui lòng đợi email kích hoạt từ hệ thống!",
+  "Register_dialog_fall": "Đăng ký không thành công",
+  "Register_dialog_fall_content": "Xin lỗi, đã tồn tại tài khoảng có thông tin bạn vừa nhập!",
+  "Register_dialog_comback_home_button": "Về lại trang đăng nhập",
+  "Register_dialog_reType_button": "Nhập lại"
+
 }
