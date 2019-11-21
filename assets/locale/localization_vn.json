@@ -59,6 +59,8 @@
   "Register_dialog_fall": "Đăng ký không thành công",
   "Register_dialog_fall_content": "Xin lỗi, đã tồn tại tài khoảng có thông tin bạn vừa nhập!",
   "Register_dialog_comback_home_button": "Về lại trang đăng nhập",
-  "Register_dialog_reType_button": "Nhập lại"
+  "Register_dialog_reType_button": "Nhập lại",
+
+  "Login_dialog_success": "Vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu"
 
 }

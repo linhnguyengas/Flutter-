@@ -219,14 +219,27 @@ class _LoginState extends State<Login> {
     log(password.toString());
     int i = response.statusCode;
 
-    if (response.statusCode >= 200 || response.statusCode < 400){
+    if (response.statusCode >= 200 || response.statusCode < 201){
       log('ok');
       log(i.toString());
       Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
       // làm thêm chuyển hướng về home và hiển thị thông báo thành công.
-    }else{
+    }else if(response.statusCode >= 401 || response.statusCode < 404){
       log('error');
       log(i.toString());
+      return showDialog(
+          context: context,
+          builder: (context){
+            return AlertDialog(
+              content: Text(AppTranslations.of(context).text('Login_dialog_success')),
+              actions: <Widget>[
+                FlatButton(
+                  child: Text('Ok'),
+                )
+              ],
+            );
+          }
+      );
       // làm thông báo lỗi.
     }
   }

@@ -57,6 +57,8 @@
   "Register_dialog_fall": "注册不成功！",
   "Register_dialog_fall_content": "我们的系统中有注册信息，请再次检查.",
   "Register_dialog_comback_home_button": "登录",
-  "Register_dialog_reType_button": "查看"
+  "Register_dialog_reType_button": "查看",
+
+  "Login_dialog_success": "请检查您的用户名和密码"
 
 }

@@ -5,14 +5,41 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Trang chủ'),
+        title: Text('Home'),
+        centerTitle: true,
       ),
-      body: Text('test'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('test', style: TextStyle(fontSize: 30.0),),
+            ],
+          ),
+        ],
+      ),
       bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: <Widget>[
-
-          ],
+        child: Container(
+          height: 40.0,
+          padding: EdgeInsets.only(left: 15.0, right: 15.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              InkWell(
+                onTap: ()=>{},
+                child: Icon(Icons.shopping_cart, size: 25.0,),
+              ),
+              InkWell(
+                onTap: ()=>{},
+                child:Icon(Icons.home, size: 25.0,) ,
+              ),
+              InkWell(
+                onTap: ()=>{},
+                child: Icon(Icons.supervised_user_circle, size: 25.0,),
+              ),
+            ],
+          ),
         ),
       ),
     );

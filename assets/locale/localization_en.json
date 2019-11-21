@@ -57,6 +57,8 @@
   "Register_dialog_fall": "Registration is not success!",
   "Register_dialog_fall_content": "There are registered information in our system, please check again. ",
   "Register_dialog_comback_home_button": "Login",
-  "Register_dialog_reType_button": "Check-out"
+  "Register_dialog_reType_button": "Check-out",
+
+  "Login_dialog_success": "Please check your Username and Password"
 
 }
