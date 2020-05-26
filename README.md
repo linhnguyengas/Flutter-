@@ -1,4 +1,4 @@
-# testqrcode
+# Fman for Distributor
 
 A new Flutter project.
 
