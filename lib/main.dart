@@ -10,12 +10,9 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:testqrcode/Service/Application.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
-
 //import 'LoadingScreen/intro.dart';
 
-void main() =>
-  runApp(new MyApp());
+void main() => runApp(new MyApp());
 
 class MyApp extends StatefulWidget {
   @override
@@ -23,10 +20,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   AppTranslationsDelegate _newLocaleDelegate;
 
-  Future initLanguageCode() async{
+  Future initLanguageCode() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String languageCode = prefs.getString('languageCode') ?? 'vn';
     print(languageCode);
@@ -34,19 +30,18 @@ class _MyAppState extends State<MyApp> {
     application.onLocaleChanged(Locale(languageCode));
   }
 
-
   @override
   void initState() {
     super.initState();
     _newLocaleDelegate = AppTranslationsDelegate(newLocale: null);
-   initLanguageCode();
+    initLanguageCode();
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Login(),
       localizationsDelegates: [
         _newLocaleDelegate,
         const AppTranslationsDelegate(),
@@ -57,12 +52,9 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-  void onLocaleChange(Locale locale){
+  void onLocaleChange(Locale locale) {
     setState(() {
       _newLocaleDelegate = AppTranslationsDelegate(newLocale: locale);
     });
-
   }
-
 }
-
