@@ -90,9 +90,7 @@ class _HomeState extends State<Home> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 80, vertical: 10.0),
                 child: RaisedButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Scan()));
-                  },
+                  onPressed: () => print('Home'),
                   color: Color(getColor('#80C241')),
                   child: Text(AppTranslations.of(context).text("scan_button"), style: TextStyle(color: Color(getColor('#F5F6FA')), fontFamily: 'Nunito-SemiBold', fontSize: 15.0)),
                 ),

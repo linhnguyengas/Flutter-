@@ -23,9 +23,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  barcode_scan: any
+  #barcode_scan: any
   http: ^0.12.0+2
-  flutter_webview_plugin: any
+  #flutter_webview_plugin: any
   fluttertoast: ^2.1.4
   introduction_screen: ^1.0.6
   shared_preferences: ^0.5.3+4
